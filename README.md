@@ -1,6 +1,9 @@
 # geopandas-notes
 
-invalid_geometries = buffer_time_dict[b][key][buffer_time_dict[b][key].is_empty]
+invalid_geometries = banana_splits.is_empty]
+print(invalid_geometries)
+
+invalid_geometries = banana_splits.is_vaalid]
 print(invalid_geometries)
 
 from shapely.geometry import Polygon
@@ -11,7 +14,7 @@ def check_collinearity(geom):
         return len(set(coords)) < 3  # Less than 3 unique points means collinear or insufficient points
     return False
 
-buffer_time_dict[b][key]['is_collinear'] = buffer_time_dict[b][key].geometry.apply(check_collinearity)
+banana_splits['is_collinear'] = banana_splits.geometry.apply(check_collinearity)
 collinear_geometries = buffer_time_dict[b][key][buffer_time_dict[b][key]['is_collinear']]
 print(collinear_geometries)
 
@@ -22,7 +25,6 @@ def check_closed(geom):
     return True  # Non-polygon geometries are considered closed for this check
 
 
-buffer_time_dict[b][key]
-buffer_time_dict[b][key]['is_closed'] = buffer_time_dict[b][key].geometry.apply(check_closed)
-non_closed_geometries = buffer_time_dict[b][key][~buffer_time_dict[b][key]['is_closed']]
+banana_splits['is_closed'] = banana_splits.geometry.apply(check_closed)
+non_closed_geometries = banana_splits[~banana_splits['is_closed']]
 print(non_closed_geometries)
